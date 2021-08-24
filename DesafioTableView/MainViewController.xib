@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo-valemobi_invert" translatesAutoresizingMaskIntoConstraints="NO" id="3Ng-jh-71U">
+                    <rect key="frame" x="41" y="257" width="238" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3Ng-jh-71U" secondAttribute="height" multiplier="119:27" id="JqZ-jM-ctg"/>
+                        <constraint firstAttribute="width" constant="238" id="M4L-ZV-CuP"/>
+                        <constraint firstAttribute="height" constant="54" id="oOt-VV-K4q"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cT-rD-iMu">
+                    <rect key="frame" x="116" y="340" width="88" height="33"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="contentStretch" x="0.29999999999999999" y="0.29999999999999999" width="0.29999999999999999" height="0.29999999999999999"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Ver Ativos">
+                        <color key="titleColor" red="1" green="0.75069953229999997" blue="0.0027981290959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.37055522200000002" green="0.37056469920000001" blue="0.37055957319999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="changeView:" destination="-1" eventType="touchUpInside" id="bn4-Gh-ODw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3Ng-jh-71U" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="CB3-bR-uJj"/>
+                <constraint firstItem="3cT-rD-iMu" firstAttribute="centerX" secondItem="3Ng-jh-71U" secondAttribute="centerX" id="gxB-u1-vBG"/>
+                <constraint firstItem="3cT-rD-iMu" firstAttribute="top" secondItem="3Ng-jh-71U" secondAttribute="bottom" constant="29" id="o0R-FD-CuP"/>
+                <constraint firstItem="3Ng-jh-71U" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wqu-3h-dae"/>
+            </constraints>
+            <point key="canvasLocation" x="-303.75" y="354.92957746478874"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo-valemobi_invert" width="280" height="76"/>
+    </resources>
+</document>
